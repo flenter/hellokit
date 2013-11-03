@@ -7,4 +7,5 @@ build:
         name: run gradle connectedInstrumentTest
         code: |
           gradle build
+          cp helloKit/build/apk/*.apk $WERCKER_REPORT_ARTIFACTS_DIR
 
