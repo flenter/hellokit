@@ -4,7 +4,7 @@ build:
   # The steps that will be executed on build
   steps:
     - script:
-        name: run gradle connectedInstrumentTest
+        name: run gradle build
         code: |
           gradle build
           cp helloKit/build/apk/*.apk $WERCKER_REPORT_ARTIFACTS_DIR
